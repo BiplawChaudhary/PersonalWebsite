@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="CSS/index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <div class=start>
+            <header>
+                <img src="pics/bl.png" class="logo" alt="logo">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+
+                    <!-- For mobile phones -->
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="showMenu()">
+                        <i class="fa fa-bars"></i></button>
+            
+                        <div class="dropdown-cnt" id="mobileMenu">
+                            <a href="index.html" class="active">Home</a><br><hr>
+                            <a href="about.html">About</a><br><hr>
+                            <a href="blog.html">Blog</a>
+
+                        </div>
+                    </div>
+
+                </nav>
+
+                <a href="#reachMe" class="contact"><button>Contact</button></a>
+            </header>
+
+              
+    
+            <br><br><br><br><br><br><br>
+            <br><br>
+            <h1 class="displaytext">Namaste! &#128591; </h1>
+            <p class="displaypara">This is me <b>"Biplaw Chaudhary"</b>.<br>
+            I am an<b><i> BSc. CSIT </i></b> Student</p>
+
+
+            <br><br><br><br><br><br><br>
+            <p class="quote"><em>"I think our best memories always remain
+                unphotographed, no?"</em></p>
+    
+    
+            <br>
+            <br><br>
+        </div>
+    
+         <!---The cards displayed below--> 
+        <div id="project">
+            <div class="project-title">
+                <h1>My Projects</h1>
+                <p>At CAB, we have EPC courses on each semester.<br>
+                On ending of each course, a project work is given.<br>
+                Here are the works I've done till now.</p>
+
+                <p>Here are the things I learned. Click them to view details.</p>
+            </div>
+
+            <div class="project-list">
+                <div class="card">
+                    <a href="project1.html"> <img src="pics/webdev.png" alt="logo"></a><hr>
+                    <p>HTML & CSS</p>
+                    <p>1<sup>st</sup> Semester</p>
+                </div>
+
+                <div class="card">
+                   <a href="project2.html"> <img src="pics/python.png" alt="logo"></a><hr>
+                    <p>Python</p>
+                    <p>2<sup>nd</sup> Semester</p>
+                </div>
+
+                <div class="card">
+                    <a href="project3.html"> <img src="pics/ml.png" alt="logo"></a><hr>
+                    <p>Machine Learning</p>
+                    <p>3<sup>rd</sup> Semester</p>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <!-- COntact forum -->
+        <div class="contact-forum" id="reachMe">
+            <h2>Contact Me</h2>
+            <p>Let's get in touch. Send me a message:</p>
+
+            <div class="main-form">
+                <form action="https://send.pageclip.co/Rw4N4PbZWHU0HnoJBIKF5obK0mlovWQO/Contact" class="pageclip-form" method="post">
+                    <p><b>Full Name </b><br>
+                    <input  type="text" placeholder="Name" required name="Name"></p>
+
+                    <p><b>Email</b><br>
+                    <input  type="text" placeholder="Email" required name="Email"></p>
+
+                    <p><b> Subject</b><br>
+                    <input  type="text" placeholder="Subject" required name="Subject"></p>
+
+                    <p><b> Message</b><br>
+                    <input  type="text" placeholder="Message" required name="Message" style="height:20vh;"></p>
+                    <p>
+                        <button type="submit" class="pageclip-form__submit">
+                        <i class="fa fa-paper-plane"></i> &nbsp;&nbsp;SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <p style="margin:0;padding:20px;font-size: 0.899em;">P.S. This form actually works &#128517;. Thanks to Github
+                Student Developer Pack.
+            </p>
+        </div>
+       
+    
+        <!--Footer -->
+        <footer>
+          <div class="footer-top">
+              <div class="contact">
+                  <h2>Contact</h2>
+                  <i class="fa fa-phone">&nbsp;&nbsp;+977 980-7922102</i><br>
+                  <i class="fa fa-phone">&nbsp;&nbsp;+977 986-3605560</i><br>
+                  <i class="fa fa-envelope">&nbsp;&nbsp;beeplaw21@gmail.com</i>
+
+              </div>
+
+              <div class="follow">
+                <h2>Follow me</h2>
+               <a href="https://www.facebook.com/profile.php?id=100011022337741" target="_blank"><i class="fa fa-facebook"></i></a> 
+                <a href="https://www.instagram.com/beep_law/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/beep_law" target="_blank"><i class="fa fa-twitter"></i></a>
+              </div>
+
+              <div class="footer-right">
+                  <h2 style="font-family:'Karla';">Beep Law</h2>
+                  <p><em>"Always" - Severus Snape
+                  </em></p>
+              </div>
+          </div>
+
+          <div class="footer-bottom">
+              <p>&copy; 2021.<br>
+            All rights reserved. Biplaw Chaudhary.</p>
+          </div>
+        </footer>
+    
+         <!-- Scripts -->
+         <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function showMenu() {
+              document.getElementById("mobileMenu").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var mobileMenu = document.getElementById("mobileMenu");
+                if (mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                }
+              }
+            }
+            </script>
+     
+    </body>
+</html>

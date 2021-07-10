@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+body{
+    font-family: 'Karla';
+    font-size:1.1em;
+    /* background: #edfdff; */
+    padding:0;
+    margin:0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    font-size: 11px;
+    text-decoration: none;
+}
+.dropdown{
+    display:none;
+}
+.dropdown-cnt{
+    display:none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 0 3%;
+    background: black;
+}
+.logo{
+    height: 7%;
+    width: 7%;
+    margin-right: auto;
+}
+.navbar{
+    list-style: none;  
+}
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin:0 5px;
+}
+.navbar li a:hover{
+    color:#0088a9;
+}
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+
+/* Body's CSS */
+hr{
+    width:70% ;
+    margin-top:15px;
+}
+.main h1{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom:5px;
+    text-decoration: underline;
+}
+.main h2{
+    font-size: 1.3em;
+    text-align:center;
+}
+.main h3{
+    font-size: 1.1em;
+    text-align:center;
+}
+.content{
+    margin:0 20%;
+    text-align: justify;
+}
+.game-image{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.game-image1{
+    width: 40%;
+   
+}
+
+.content h4{
+    margin-bottom: 0px;
+}
+.learn-link a{
+    font-size: 0.79em;
+    color: black;
+    margin:15px 10px;
+}
+
+.learn-link a:link{
+    color:#adcc7a;
+}
+.learn-link a:visited{
+    color: #eb2a3a;
+}
+
+.dl{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom:15px;
+}
+.dl button{
+    background: black;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.dl button:hover{
+    background:radial-gradient(rgba(219,86,86,0.7),rgba(86,184,219,0.7));
+    color: black;
+}
+
+/* Sidenav added */
+.content{
+    margin-left: 16.5%;
+    margin-right: 5%;
+    text-align: justify;
+    width: 80%;
+}
+.details-body{
+    display:flex;
+}
+.sidenav{
+    width:15%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding:5px 10px;
+    height: fit-content;
+}
+.sidenav a{
+    color:black;
+    margin-top:10px;
+    font-size: 0.9em;
+    color:#0088a9;
+}
+.sidenav a:visited{
+    color:red;
+}
+
+
+
+
+
+
+/*-----Footer----*/
+footer{
+    background: #0D0D0C;
+    color:white;
+}
+.footer-top{
+    display: flex;
+    align-content: top;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.contact h2{
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+.contact i{
+    padding: 5px 5px;
+    transition: 0.5s ease-in-out;
+}
+.contact i:hover{
+    color:#79aeb5;
+}
+
+.follow h2{
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+.follow a{
+    font-size: 1em;
+}
+.follow i{
+    padding:0 8px;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.follow i:hover{
+    color:#0088a9;
+}
+.footer-bottom{
+    font-size: 0.8em;
+    background:black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:700px) {
+    .logo{
+        width:30vw;
+        height:10vh;
+    }
+
+   .navbar{
+       display:none;
+   }
+
+   .dropdown{
+       display: block;
+   }
+   .dropdown i{
+        display:block;
+    
+   }
+   .dropdown button{
+       background: none;
+       font-size: 1.35em;
+   }
+
+   .dropdown-cnt{
+       display:none;
+    
+       position: absolute;
+       text-align: center;
+       margin-left:1em;
+       padding: 2em 2em;
+       background: #3e6061;
+       box-shadow: 0px 10px 16px 0px rgba(110,137,138,0.3);
+       z-index: 1;
+       
+   }
+   .dropdown-cnt a{
+       float:none;
+       color: white;
+       display: block;
+        margin:8px 0;
+        font-size: 0.99em;
+   }
+   .show{
+       display: block;
+   }
+   
+
+/* Body's CSS */
+   .content{
+       margin:0 10%;
+   }
+   .game-image{
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+   .game-image1{
+       width:100%;
+       margin-top:15px;
+   }
+
+   .dl button{
+       margin:12px 0;
+   }
+   .learn-link{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .sidenav{
+       display: none;
+   }
+
+
+
+
+      /* Footer */
+      .footer-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer-right{
+        display:none;
+    }
+
+    .contact {
+        display:block;
+        font-size: 1em;
+    }
+    .contact h2{
+        text-align: center;
+    }
+}

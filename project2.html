@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="CSS/project2.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="pics/bl.png" class="logo" alt="logo">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+
+                 <!-- For mobile phones -->
+                 <div class="dropdown">
+                    <button class="dropbtn" onclick="showMenu()">
+                    <i class="fa fa-bars"></i></button>
+        
+                    <div class="dropdown-cnt" id="mobileMenu">
+                        <a href="index.html">Home</a><br><hr>
+                        <a href="about.html">About</a><br><hr>
+                        <a href="blog.html" >Blog</a>
+
+                    </div>
+                </div>
+
+            </nav>
+            <a href="index.html#reachMe" class="contact"><button>Contact</button></a>
+        </header>
+
+        <!-- Main Body -->
+        <div class="main">
+            <hr>
+            <h1>Python's Project</h1>
+            <h2>2<sup>nd</sup>Semester</h2>
+            
+            <hr>
+            <div class="details-body">
+                <div class="content">
+                    <h3>Project's name: Hangman</h3><hr>
+                    <p>After finishing Python, we were divided into groups and each group
+                        had to do a python's project and submit it's report. Our group chose to build GUI <b>Hangman </b>for the project.
+                    </p>
+                    <p>
+                        Hangman is a word guessing game. In this game, the player has to 
+                        guess the correct word. Each mistake will decrease the life by one.
+                        If the player guesses the word correctly, then the player wins the game.
+                    </p>
+                    <p>We used <b>Python</b> and it's built in GUI library <b>Tkinter</b>
+                    to create Hangman.
+                    </p>
+                    <hr>
+                    <h2>Implementation details</h2><hr>
+                    <p>
+                        In our implementation of Hangman, the computer will take on the role of the "chooser" and the human player will be the "guesser." 
+                        The computer will secretly choose a word from a list which is in .csv format which will be imported to program and show the player 
+                        how many letters are in the word by displaying a sequence of blanks (underscores) and the hint related to that word. Then, the player
+                        will select the words form the buttons. 
+                        If the player clicks a button of letter that is in the secret word, all blanks representing an instance of that letter should be replaced by the letter
+                        and the letter button will be destroyed. If the guessed letter is not in the word at all, the player should lose a chance and a new part of the Hangman 
+                        figure should appear. If the player guesses all letters in the word, he or she wins. If the Hangman figure is completed, the player loses, then the program 
+                        asks if he or she wants to play again. If user selects yes then the game restarts else quits.
+                    </p>
+
+
+                    <hr><h2>Screenshots</h2><hr>
+                    <div class="game-image">
+                        <img src="project-img/hangman-image-1.png" alt="Hangman" class="game-image1">
+                        <img src="project-img/hangman-image-2.png" alt="Hangman" class="game-image1">  
+                    </div>
+                    <br>
+                    <div class="dl">
+                        <h2>Download Links</h2><hr>
+
+                        <!-- <h4><b>1.</b>&nbsp;&nbsp;Download the source code
+                        </h4> -->
+                        <p>
+                            In order to run the code make sure you have <b>Python</b> installed
+                            on your machine.<br>Also, we've used <b>Pygame</b> to play the music. So please install that too.
+                        </p>
+                        <a href="files/hangman.zip"><button><i class="fa fa-download">&nbsp;&nbsp;&nbsp;Source Code</i></button></a>
+                        <a href="files/Python's Project (Hangman).pdf" target="_blank"><button><i class="fa fa-download">&nbsp;&nbsp;&nbsp;Detailed Report</i></button></a>
+                        <p class="learn-link">
+                            <a href="https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html" target="_blank">Learn how to install Python</a>
+                            <a href="https://pypi.org/project/pygame/" target="_blank"> Learn how to install Pygame</a>
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+
+
+                <div class="sidenav">
+                    <h3 style="text-decoration: underline;text-align: left;">Projects</h3>
+                    <a href="project1.html">HTML & CSS</a><br><br>
+                    <a href="project2.html">Python</a><br><br>
+                    <a href="project3.html">Machine Learning</a><br><br>
+                </div>
+            </div>
+        </div>
+
+         <!--Footer -->
+         <footer>
+            <div class="footer-top">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <i class="fa fa-phone">&nbsp;&nbsp;+977 980-7922102</i><br>
+                    <i class="fa fa-phone">&nbsp;&nbsp;+977 986-3605560</i><br>
+                    <i class="fa fa-envelope">&nbsp;&nbsp;beeplaw21@gmail.com</i>
+    
+                </div>
+    
+                <div class="follow">
+                    <h2>Follow me</h2>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+    
+                <div class="footer-right">
+                    <h2 style="font-family:'Karla';">Beep Law</h2>
+                    <p><em>"Always" - Severus Snape
+                    </em></p>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2021.<br>
+                All rights reserved. Biplaw Chaudhary.</p>
+            </div>
+            </footer>
+    
+    
+            <!-- Scripts -->
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function showMenu() {
+                    document.getElementById("mobileMenu").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(e) {
+                    if (!e.target.matches('.dropbtn')) {
+                    var mobileMenu = document.getElementById("mobileMenu");
+                    if (mobileMenu.classList.contains('show')) {
+                        mobileMenu.classList.remove('show');
+                    }
+                    }
+                }
+                </script>
+
+    </body>
+</html>
